@@ -1,0 +1,5 @@
+conifer_ranges: shapefile containing species range polygons for several western north american conifer tree species downloaded from the BIEN database
+
+species: species names
+
+gid: unique species identifier from BIEN
