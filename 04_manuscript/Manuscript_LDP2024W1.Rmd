@@ -1,0 +1,46 @@
+---
+title: "Conifers manuscript"
+author: "Abi Brown"
+Date: "2024-09-15"
+output: pdf_document
+bibliography: 
+  - references.bib
+  - grateful-refs.bib
+csl: "forest-science.csl"
+---
+
+##Data
+
+Data for this project was downloaded from the Botanical Information and Ecology Network (BIEN) Database. You can learn more about BIEN by going to : <https://bien.nceas.ucsb.edu/bien/>. Range maps for common conifer species in British Columbia were obtained using the BIEN R package version 1.2.6 [@maitner2018].
+
+Species included are:
+
+1.  *Abies amabilis*
+2.  *Abies grandis*
+3.  *Abies lasiocarpa*
+4.  *Thuja plicata*
+5.  *Pseudotsuga menziesii*
+6.  *Tsuga mertensiana*
+7.  *Tsuga heterophylla*
+8.  *Juniperus scopulorum*
+9.  *Larix lyallii*
+10. *Larix laricina*
+11. *Larix occidentalis*
+12. *Pinus albicaulis*
+13. *Pinus flexilis*
+14. *Pinus banksiana*
+15. *Pinus contorta*
+16. *Pinus monticola*
+17. *Pinus ponderosa*
+18. *Picea mariana*
+19. *Picea engelmannii*
+20. *Picea sitchensis*
+21. *Picea glauca*
+22. *Taxus brevifolia*
+23. *Chamaecyparis nootkatensis*
+
+Both Douglas fir (*Pseudotsuga menziesii*) and lodgepole pine (*Pinus contorta*) are expected to experience contractions in both their fundamental and realized climate niches under the Shared Economic Pathways 2-4.5 greenhouse gas emissions scenario [@zhao2023].
+
+```{r, echo = TRUE}
+grateful::cite_packages(output = "paragraph", out.dir = ".")
+```
