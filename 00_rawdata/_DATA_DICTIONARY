@@ -1,5 +1,24 @@
-conifer_ranges: shapefile containing species range polygons for several western north american conifer tree species downloaded from the BIEN database
+sp
+species - "B" or "O" for blue or orange morphologies
+All crabs are species Leptograspus variegatus
 
-species: species names
+sex
+as it says
 
-gid: unique species identifier from BIEN
+index
+index 1:50 within each of the four groups
+
+FL
+frontal lobe size (mm)
+
+RW
+rear width (mm)
+
+CL
+carapace length (mm)
+
+CW
+carapace width (mm)
+
+BD
+body depth (mm)

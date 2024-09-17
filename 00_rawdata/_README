@@ -1,1 +1,7 @@
-README for data
+Crabs data was downloaded using the MASS package in R. Data was collected in Western Australia to examine the morphologies of two colour morphs (blue and orange) of Leptograpsus variegatus crabs.
+
+Data source
+
+  Campbell, N., & Mahon, R. (1974). A multivariate study of variation in two species of rock crab of the genus Leptograpsus. Australian Journal of Zoology, 22(3), 417. https://doi.org/10.1071/zo9740417
+
+
