@@ -1,5 +1,5 @@
 ---
-title           : "Morphological differences in Leptograpsus rock crabs using MANOVA and PCA."
+title           : "Morphological differences in Leptograpsus rock crabs"
 
 shorttitle      : "Morphological differences in Leptograpsus rock crabs"
 date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
@@ -12,20 +12,18 @@ affiliation:
   - id          : 1
     institution : University of British Columbia
 
-
 output: prereg::prereg_pdf
-bibliography: references.bib
+bibliography:
+   - references.bib
 ---
 
 # Study Information
 
-## Morphological differences in Leptograpsus rock crabs using MANOVA and PCA.
-
-`r rmarkdown::metadata$title`
+Morphological differences in Leptograpsus rock crabs using MANOVA and PCA.
 
 ## Description
 
-This project will explore the potential differences in morphology in two colour morphs of the rock crab *Leptograpsus variegatus* using data collected by @campbell1974.
+This project will explore the potential differences in morphology in two colour morphs of the rock crab *Leptograpsus variegatus* using data collected by Campbell and Mahon (1974).
 
 ## Hypotheses
 
@@ -49,11 +47,11 @@ We have a factorial design with two factors (sex and colour morph) each with two
 
 ## Explanation of existing data
 
-In accessing the data, I have only completed simple visualizations of data distributions (histograms). I have only read through the introduction and data collection procedures of @campbell1974.
+In accessing the data, I have only completed simple visualizations of data distributions (histograms). I have only read through the introduction and data collection procedures of Campbell and Mahon (1974).
 
 ## Data collection procedures
 
-Samples were collected in western Australia (Fremantle, W.A. (32"S., 117"E.) and measurements were taken with vernier calipers, accurate to the nearest 0.1mm [@campbell1974].
+Samples were collected in western Australia (Fremantle, W.A. (32"S., 117"E.) and measurements were taken with vernier calipers, accurate to the nearest 0.1mm.
 
 ## Sample size
 
@@ -61,25 +59,13 @@ For each colour morph, 50 male and 50 female individuals were collected for a to
 
 ## Sample size rationale
 
-@campbell1974 do not provide a reasoning for sample size selected. Additional data for these populations from other data sources was not found due to time constraints and lack of open availability.
+Campbell and Mahon (1974) do not provide a reasoning for sample size selected. Additional data for these populations from other data sources was not found due to time constraints and lack of open availability.
 
 # Variables
 
 ## Measured variables
 
-Measured variables include:
-
-| variable          | unit | type        |
-|-------------------|------|-------------|
-| sex               | \-   | categorical |
-| colour morph      | \-   | categorical |
-| frontal lobe size | mm   | continuous  |
-| rear width        | mm   | continuous  |
-| carapace length   | mm   | continuous  |
-| carapace width    | mm   | continuous  |
-| body depth        | mm   | continuous  |
-
-# Analysis Plan
+Measured variables include: frontal lobe size, rear width, carapace length, carapace width, and body depth. All variables are continous and measured in millimeters.
 
 ## Statistical models
 
@@ -95,7 +81,7 @@ Based on initial examination of the data, no transformations are planned.
 
 ## Inference criteria
 
-Significance of MANOVA tests will be determined using a significance values of p \> 0.005 for the F-test statistic.
+Significance of MANOVA tests will be determined using a significance values of p \> 0.005 for the F statistic.
 
 Principal components will be kept or discarded based on the Kaiser-Guttman criterion which suggests retaining components with eigenvalues \>1.
 
@@ -108,11 +94,3 @@ No samples will be excluded from the analysis.
 Data is complete as all observations have values for each measured variable.
 
 # References
-
-```{=tex}
-\vspace{-2pc}
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{-1in}
-\setlength{\parskip}{8pt}
-```
-\noindent
