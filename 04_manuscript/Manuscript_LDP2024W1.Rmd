@@ -3,17 +3,33 @@ title: "Leptograpsus crab morphology manuscript"
 author: "Abi Brown"
 Date: "2024-09-15"
 output: pdf_document
+header-includes:
+  \usepackage{float}
+ \floatplacement{figure}{H}
 bibliography: 
   - references.bib
   - grateful-refs.bib
 csl: "forest-science.csl"
-bibliography: references.bib
 ---
 
-##Data
+##Introduction
+
+*Leptograpsus variegatus* is a species of small shore crab found throughout the Southern Pacific, including on the shores of western Australia where the crabs dataset was collected [@campbell1974]. These crabs play an important role in the flow of nutrients through mangrove ecosystems, where they break down mangrove leaves and provide particulate organic matter to many species of detritivores [@camilleri1992].
+
+#Data
 
 Data for this project was originally collected and published in @campbell1974.
 
-```{r, echo = TRUE}
+![Histograms showing distributions of frontal lobe (FL), carapace length (CL), and body depth (BD).](images/histograms.pdf)
+
+```{r echo=FALSE}
 grateful::cite_packages(output = "paragraph", out.dir = ".")
 ```
+
+##Results
+
+Results of the PCA demonstrated some distinction between blue and orange morphs along the first principal component, and a larger distinction between males and females along the second axis of variation as seen in Figure 2.
+
+![PCA biplot showing first (95.78% of total variation) and second (3.03% of total variation) axes of variation in the crabs dataset. Groups are as follows, OM (orange males), OF (orange females), BM (blue males), BF (blue females).](images/PCA_biplot.pdf)
+
+##References
