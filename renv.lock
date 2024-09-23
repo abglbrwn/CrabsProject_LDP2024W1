@@ -316,13 +316,8 @@
     },
     "jsonlite": {
       "Package": "jsonlite",
-      "Version": "1.8.8",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "methods"
-      ],
-      "Hash": "e1b9c55281c5adc4dd113652d9e26768"
+      "Version": "1.8.9",
+      "Source": "Repository"
     },
     "knitr": {
       "Package": "knitr",
@@ -478,17 +473,6 @@
         "utils"
       ],
       "Hash": "01f28d4278f15c76cddbea05899c5d6f"
-    },
-    "prereg": {
-      "Package": "prereg",
-      "Version": "0.6.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "rmarkdown"
-      ],
-      "Hash": "067f9c808e9beed351ceb96dc09b60f0"
     },
     "rappdirs": {
       "Package": "rappdirs",
