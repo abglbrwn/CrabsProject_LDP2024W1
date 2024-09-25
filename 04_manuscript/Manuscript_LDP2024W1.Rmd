@@ -16,7 +16,7 @@ csl: "forest-science.csl"
 
 *Leptograpsus variegatus* is a species of small shore crab found throughout the Southern Pacific, including on the shores of western Australia where the crabs dataset was collected [@campbell1974]. These crabs play an important role in the flow of nutrients through mangrove ecosystems, where they break down mangrove leaves and provide particulate organic matter to many species of detritivores [@camilleri1992].
 
-#Data
+#Data and analysis
 
 Data for this project was originally collected and published in @campbell1974.
 
@@ -28,8 +28,19 @@ grateful::cite_packages(output = "paragraph", out.dir = ".")
 
 ##Results
 
-Results of the PCA demonstrated some distinction between blue and orange morphs along the first principal component, and a larger distinction between males and females along the second axis of variation as seen in Figure 2.
+Results of the PCA demonstrated some distinction between blue and orange morphs along the first principal component, and a larger distinction between males and females along the second axis of variation as seen in the following code chunk.
 
-![PCA biplot showing first (95.78% of total variation) and second (3.03% of total variation) axes of variation in the crabs dataset. Groups are as follows, OM (orange males), OF (orange females), BM (blue males), BF (blue females).](images/PCA_biplot.pdf)
+```{r crabsPCA, echo=TRUE}
+library(vegan)
+library(ggplot2)
+library(ggordiplots)
+crabs <- read.csv('../00_rawdata/crabs_measurements.csv')
+#pca using vegan's rda function
+pca_crabs <- rda(crabs[5:9], scale = TRUE)
+#creating a species+sex column for visualization in the plot
+crabs$spsex <- paste0(crabs$sp, crabs$sex)
+#using ggordiplot. Ellipses are 1 standard deviation about the centroid.
+gg_ordiplot(pca_crabs, groups = crabs$spsex, pt.size = 1, kind = 'sd')
+```
 
 ##References
