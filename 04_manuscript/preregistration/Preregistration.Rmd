@@ -13,8 +13,6 @@ affiliation:
     institution : University of British Columbia
 
 output: prereg::prereg_pdf
-bibliography:
-   - references.bib
 ---
 
 # Study Information
@@ -23,7 +21,7 @@ Morphological differences in Leptograpsus rock crabs using MANOVA and PCA.
 
 ## Description
 
-This project will explore the potential differences in morphology in two colour morphs of the rock crab *Leptograpsus variegatus* using data collected by Campbell and Mahon (1974).
+This project will explore the potential differences in morphology in two colour morphs of the rock crab *Leptograpsus variegatus* using data collected by Campbell and Mahon (1941). I will be using the data orginally collected for this study and attempting to recreate some of their analyses and figures.
 
 ## Hypotheses
 
@@ -47,7 +45,7 @@ We have a factorial design with two factors (sex and colour morph) each with two
 
 ## Explanation of existing data
 
-In accessing the data, I have only completed simple visualizations of data distributions (histograms). I have only read through the introduction and data collection procedures of Campbell and Mahon (1974).
+In accessing the data, I have only completed simple visualizations of data distributions (histograms). I have only read through the introduction and data collection procedures of the manuscipt for which the crabs data was originally collected Campbell and Mahon (1974).
 
 ## Data collection procedures
 
@@ -59,7 +57,7 @@ For each colour morph, 50 male and 50 female individuals were collected for a to
 
 ## Sample size rationale
 
-Campbell and Mahon (1974) do not provide a reasoning for sample size selected. Additional data for these populations from other data sources was not found due to time constraints and lack of open availability.
+Campbell and Mahon (1974) do not provide a reasoning for sample size selected. Additional data for these populations from other data sources was not found due to time constraints.
 
 # Variables
 
@@ -94,3 +92,12 @@ No samples will be excluded from the analysis.
 Data is complete as all observations have values for each measured variable.
 
 # References
+
+\vspace{-1pc}
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{-1in}
+\setlength{\parskip}{8pt}
+
+Campbell, N., and R. Mahon. 1974. A multivariate study of variation in two species of rock crab of the genus Leptograpsus. Australian Journal of Zoology. 22(3):417 Available online at: http://www.publish.csiro.au /?paper=ZO9740417.
+\noindent
+
