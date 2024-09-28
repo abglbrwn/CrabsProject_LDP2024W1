@@ -10,7 +10,6 @@ bibliography:
   - references.bib
   - grateful-refs.bib
 csl: "forest-science.csl"
-bibliography: references.bib
 ---
 
 ##Introduction
@@ -19,9 +18,11 @@ bibliography: references.bib
 
 #Data and analysis
 
-Data for this project was originally collected and published in @campbell1974. Take a look at the distribution of some of the variables show below in Figure 1. Based on visually examining the distributions (and reading what the original authors did in their analysis) they look pretty normally distributed to me! And since they are already
+Data for this project was originally collected and published in @campbell1974. Take a look at the distribution of some of the variables show below in Figure 1. Based on visually examining the distributions, (and reading what the original authors did in their analysis), and since all variables are already in a common unit measure (mm) I decided not to transform the data.
 
 ![Histograms showing distributions of frontal lobe (FL), carapace length (CL), and body depth (BD).](images/histograms.pdf)
+
+Analysis and data visualizations were all performed in R.
 
 ```{r echo=FALSE}
 grateful::cite_packages(output = "paragraph", out.dir = ".")
@@ -31,18 +32,21 @@ grateful::cite_packages(output = "paragraph", out.dir = ".")
 
 Results of the PCA demonstrated some distinction between blue and orange morphs along the first principal component, and a larger distinction between males and females along the second axis of variation as seen in the following code chunk.
 
-```{r crabsPCA, echo=TRUE}
+```{r crabsPCA, fig.cap = "Biplot showing the first and second principal components from the PCA using the crabs morphological data. Point represent individual crabs and are coloured by sex and colour morph", echo=TRUE}
+#we need the vegan stats package, ggplot, and
+#ggordiplots which allows us to create biplots using ggplot
 library(vegan)
 library(ggplot2)
 library(ggordiplots)
 #reading crabs data from the raw data folder
 crabs <- read.csv('../00_rawdata/crabs_measurements.csv')
 #perform pca using vegan's rda function
-pca_crabs <- rda(crabs[5:9], scale = TRUE)
+pca_crabs <- rda(crabs[5:9])
 #creating a species+sex column for visualization in the plot
 crabs$spsex <- paste0(crabs$sp, crabs$sex)
 #using ggordiplot. Ellipses are 1 standard deviation about the centroid.
-gg_ordiplot(pca_crabs, groups = crabs$spsex, pt.size = 1, kind = 'sd')
+gg_ordiplot(pca_crabs, groups = crabs$spsex, pt.size = 1, 
+                          kind = 'sd')
 ```
 
 ##References
