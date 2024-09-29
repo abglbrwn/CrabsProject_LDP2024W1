@@ -708,13 +708,8 @@
     },
     "jsonlite": {
       "Package": "jsonlite",
-      "Version": "1.8.8",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "methods"
-      ],
-      "Hash": "e1b9c55281c5adc4dd113652d9e26768"
+      "Version": "1.8.9",
+      "Source": "Repository"
     },
     "knitr": {
       "Package": "knitr",
