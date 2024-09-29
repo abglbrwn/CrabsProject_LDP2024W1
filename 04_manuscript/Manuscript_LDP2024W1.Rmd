@@ -51,4 +51,6 @@ gg_ordiplot(pca_crabs, groups = crabs$spsex, pt.size = 1,
 
 @campbell1974 did not include a figure showing their PCA, however their listed values for their first and second principal components are similar to the ones I obtained using the standard rda function in vegan. Since only one principal component is captures over 98% of the total variation in the original variables, there is a consistent relationship between all variables across the dataset. We can see in Figure 2 that there is a very large overlap between the males of both colour morphs, and some minor differentiation between females of between colour morphs in the first dimension (shown along the x-axis). As noted in [@campbell1974] the crabs have a fairly consistent body shape, and much of the variation is in total size across all measured dimensions. Since PCA is not a statistical test, we cannot use it to determine if there is a significant difference between colour morphs. Unmeasured factors such as crab age may also be contributing to variation within the colour morph and sex groups.
 
+I ended up not also doing the manova analysis as I laid out in my preregistration as I ran out of time :(. I had planned to do it on my overnight flight to Australia (where I am as of submitting this assignment) but I ended up sleeping instead zzzzz. 
+
 ## References

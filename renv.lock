@@ -709,7 +709,12 @@
     "jsonlite": {
       "Package": "jsonlite",
       "Version": "1.8.9",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "methods"
+      ],
+      "Hash": "4e993b65c2c3ffbffce7bb3e2c6f832b"
     },
     "knitr": {
       "Package": "knitr",
@@ -1016,17 +1021,6 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "a555924add98c99d2f411e37e7d25e9f"
-    },
-    "prereg": {
-      "Package": "prereg",
-      "Version": "0.6.0",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "R",
-        "rmarkdown"
-      ],
-      "Hash": "067f9c808e9beed351ceb96dc09b60f0"
     },
     "processx": {
       "Package": "processx",
