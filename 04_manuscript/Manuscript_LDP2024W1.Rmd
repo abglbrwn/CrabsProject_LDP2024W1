@@ -12,11 +12,11 @@ bibliography:
 csl: "forest-science.csl"
 ---
 
-##Introduction
+## Introduction
 
-*Leptograpsus variegatus* is a species of small shore crab found throughout the Southern Pacific, including on the shores of western Australia where the crabs dataset was collected [@campbell1974]. These crabs play an important role in the flow of nutrients through mangrove ecosystems, where they break down mangrove leaves and provide particulate organic matter to many species of detritivores [@camilleri1992].
+*Leptograpsus variegatus* is a species of small shore crab found throughout the Southern Pacific, including on the shores of western Australia where the crabs dataset was collected [@campbell1974]. These crabs play an important role in the flow of nutrients through mangrove ecosystems, where they break down mangrove leaves and provide particulate organic matter to many species of detritivores [@camilleri1992]. The authors of the study for which the crabs dataset was originally collected intended their analysis to support the differentiation of the two colour morphs into separate species [@campbell1974]. However, as far as I can tell, there have been no official subspecies of *Leptograpsus variegatus* described in the 50 years the publication of the original study.
 
-#Data and analysis
+## Data and analysis
 
 Data for this project was originally collected and published in @campbell1974. Take a look at the distribution of some of the variables show below in Figure 1. Based on visually examining the distributions, (and reading what the original authors did in their analysis), and since all variables are already in a common unit measure (mm) I decided not to transform the data.
 
@@ -28,7 +28,7 @@ Analysis and data visualizations were all performed in R.
 grateful::cite_packages(output = "paragraph", out.dir = ".")
 ```
 
-##Results
+## Results
 
 Results of the PCA demonstrated some distinction between blue and orange morphs along the first principal component, and a larger distinction between males and females along the second axis of variation as seen in the following code chunk.
 
@@ -49,4 +49,6 @@ gg_ordiplot(pca_crabs, groups = crabs$spsex, pt.size = 1,
                           kind = 'sd')
 ```
 
-##References
+@campbell1974 did not include a figure showing their PCA, however their listed values for their first and second principal components are similar to the ones I obtained using the standard rda function in vegan. Since only one principal component is captures over 98% of the total variation in the original variables, there is a consistent relationship between all variables across the dataset. We can see in Figure 2 that there is a very large overlap between the males of both colour morphs, and some minor differentiation between females of between colour morphs in the first dimension (shown along the x-axis). As noted in [@campbell1974] the crabs have a fairly consistent body shape, and much of the variation is in total size across all measured dimensions. Since PCA is not a statistical test, we cannot use it to determine if there is a significant difference between colour morphs. Unmeasured factors such as crab age may also be contributing to variation within the colour morph and sex groups.
+
+## References
